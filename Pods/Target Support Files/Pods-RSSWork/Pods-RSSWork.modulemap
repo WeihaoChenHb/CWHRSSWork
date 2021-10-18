@@ -1,0 +1,6 @@
+module Pods_RSSWork {
+  umbrella header "Pods-RSSWork-umbrella.h"
+
+  export *
+  module * { export * }
+}

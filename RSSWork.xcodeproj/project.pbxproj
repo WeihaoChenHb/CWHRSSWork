@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2905AE11271DC08800D67EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE10271DC08800D67EFD /* AppDelegate.swift */; };
+		2905AE13271DC08800D67EFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE12271DC08800D67EFD /* SceneDelegate.swift */; };
+		2905AE15271DC08800D67EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE14271DC08800D67EFD /* ViewController.swift */; };
+		2905AE18271DC08800D67EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2905AE16271DC08800D67EFD /* Main.storyboard */; };
+		2905AE1A271DC09000D67EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2905AE19271DC09000D67EFD /* Assets.xcassets */; };
+		2905AE1D271DC09000D67EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2905AE1B271DC09000D67EFD /* LaunchScreen.storyboard */; };
+		2905AE28271DC09000D67EFD /* RSSWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE27271DC09000D67EFD /* RSSWorkTests.swift */; };
+		2905AE33271DC09000D67EFD /* RSSWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE32271DC09000D67EFD /* RSSWorkUITests.swift */; };
+		92C6AA16D728DF5CC0446E97 /* libPods-RSSWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F683C679B1019C6AA358078 /* libPods-RSSWork.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2905AE24271DC09000D67EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2905AE05271DC08800D67EFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2905AE0C271DC08800D67EFD;
+			remoteInfo = RSSWork;
+		};
+		2905AE2F271DC09000D67EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2905AE05271DC08800D67EFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2905AE0C271DC08800D67EFD;
+			remoteInfo = RSSWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28AEE6044F2B924234757072 /* Pods-RSSWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSWork.release.xcconfig"; path = "Target Support Files/Pods-RSSWork/Pods-RSSWork.release.xcconfig"; sourceTree = "<group>"; };
+		2905AE0D271DC08800D67EFD /* RSSWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2905AE10271DC08800D67EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2905AE12271DC08800D67EFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2905AE14271DC08800D67EFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2905AE17271DC08800D67EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2905AE19271DC09000D67EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2905AE1C271DC09000D67EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2905AE1E271DC09000D67EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2905AE23271DC09000D67EFD /* RSSWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2905AE27271DC09000D67EFD /* RSSWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSWorkTests.swift; sourceTree = "<group>"; };
+		2905AE29271DC09000D67EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2905AE2E271DC09000D67EFD /* RSSWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2905AE32271DC09000D67EFD /* RSSWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSWorkUITests.swift; sourceTree = "<group>"; };
+		2905AE34271DC09000D67EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F683C679B1019C6AA358078 /* libPods-RSSWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSSWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27F015A046204DE0D6EE3A4 /* Pods-RSSWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSWork.debug.xcconfig"; path = "Target Support Files/Pods-RSSWork/Pods-RSSWork.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2905AE0A271DC08800D67EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C6AA16D728DF5CC0446E97 /* libPods-RSSWork.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2905AE20271DC09000D67EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2905AE2B271DC09000D67EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2905AE04271DC08800D67EFD = {
+			isa = PBXGroup;
+			children = (
+				2905AE0F271DC08800D67EFD /* RSSWork */,
+				2905AE26271DC09000D67EFD /* RSSWorkTests */,
+				2905AE31271DC09000D67EFD /* RSSWorkUITests */,
+				2905AE0E271DC08800D67EFD /* Products */,
+				5D74E76867D85D18702BD3F9 /* Pods */,
+				DAD2B69C5D7CE01BE5480A74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2905AE0E271DC08800D67EFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2905AE0D271DC08800D67EFD /* RSSWork.app */,
+				2905AE23271DC09000D67EFD /* RSSWorkTests.xctest */,
+				2905AE2E271DC09000D67EFD /* RSSWorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2905AE0F271DC08800D67EFD /* RSSWork */ = {
+			isa = PBXGroup;
+			children = (
+				2905AE10271DC08800D67EFD /* AppDelegate.swift */,
+				2905AE12271DC08800D67EFD /* SceneDelegate.swift */,
+				2905AE14271DC08800D67EFD /* ViewController.swift */,
+				2905AE16271DC08800D67EFD /* Main.storyboard */,
+				2905AE19271DC09000D67EFD /* Assets.xcassets */,
+				2905AE1B271DC09000D67EFD /* LaunchScreen.storyboard */,
+				2905AE1E271DC09000D67EFD /* Info.plist */,
+			);
+			path = RSSWork;
+			sourceTree = "<group>";
+		};
+		2905AE26271DC09000D67EFD /* RSSWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				2905AE27271DC09000D67EFD /* RSSWorkTests.swift */,
+				2905AE29271DC09000D67EFD /* Info.plist */,
+			);
+			path = RSSWorkTests;
+			sourceTree = "<group>";
+		};
+		2905AE31271DC09000D67EFD /* RSSWorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2905AE32271DC09000D67EFD /* RSSWorkUITests.swift */,
+				2905AE34271DC09000D67EFD /* Info.plist */,
+			);
+			path = RSSWorkUITests;
+			sourceTree = "<group>";
+		};
+		5D74E76867D85D18702BD3F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C27F015A046204DE0D6EE3A4 /* Pods-RSSWork.debug.xcconfig */,
+				28AEE6044F2B924234757072 /* Pods-RSSWork.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DAD2B69C5D7CE01BE5480A74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F683C679B1019C6AA358078 /* libPods-RSSWork.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2905AE0C271DC08800D67EFD /* RSSWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2905AE37271DC09000D67EFD /* Build configuration list for PBXNativeTarget "RSSWork" */;
+			buildPhases = (
+				DDD5F92DDA9F13A094DB0EA3 /* [CP] Check Pods Manifest.lock */,
+				2905AE09271DC08800D67EFD /* Sources */,
+				2905AE0A271DC08800D67EFD /* Frameworks */,
+				2905AE0B271DC08800D67EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSWork;
+			productName = RSSWork;
+			productReference = 2905AE0D271DC08800D67EFD /* RSSWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2905AE22271DC09000D67EFD /* RSSWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2905AE3A271DC09000D67EFD /* Build configuration list for PBXNativeTarget "RSSWorkTests" */;
+			buildPhases = (
+				2905AE1F271DC09000D67EFD /* Sources */,
+				2905AE20271DC09000D67EFD /* Frameworks */,
+				2905AE21271DC09000D67EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2905AE25271DC09000D67EFD /* PBXTargetDependency */,
+			);
+			name = RSSWorkTests;
+			productName = RSSWorkTests;
+			productReference = 2905AE23271DC09000D67EFD /* RSSWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2905AE2D271DC09000D67EFD /* RSSWorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2905AE3D271DC09000D67EFD /* Build configuration list for PBXNativeTarget "RSSWorkUITests" */;
+			buildPhases = (
+				2905AE2A271DC09000D67EFD /* Sources */,
+				2905AE2B271DC09000D67EFD /* Frameworks */,
+				2905AE2C271DC09000D67EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2905AE30271DC09000D67EFD /* PBXTargetDependency */,
+			);
+			name = RSSWorkUITests;
+			productName = RSSWorkUITests;
+			productReference = 2905AE2E271DC09000D67EFD /* RSSWorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2905AE05271DC08800D67EFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					2905AE0C271DC08800D67EFD = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					2905AE22271DC09000D67EFD = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2905AE0C271DC08800D67EFD;
+					};
+					2905AE2D271DC09000D67EFD = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2905AE0C271DC08800D67EFD;
+					};
+				};
+			};
+			buildConfigurationList = 2905AE08271DC08800D67EFD /* Build configuration list for PBXProject "RSSWork" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2905AE04271DC08800D67EFD;
+			productRefGroup = 2905AE0E271DC08800D67EFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2905AE0C271DC08800D67EFD /* RSSWork */,
+				2905AE22271DC09000D67EFD /* RSSWorkTests */,
+				2905AE2D271DC09000D67EFD /* RSSWorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2905AE0B271DC08800D67EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2905AE1D271DC09000D67EFD /* LaunchScreen.storyboard in Resources */,
+				2905AE1A271DC09000D67EFD /* Assets.xcassets in Resources */,
+				2905AE18271DC08800D67EFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2905AE21271DC09000D67EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2905AE2C271DC09000D67EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DDD5F92DDA9F13A094DB0EA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSSWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2905AE09271DC08800D67EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2905AE15271DC08800D67EFD /* ViewController.swift in Sources */,
+				2905AE11271DC08800D67EFD /* AppDelegate.swift in Sources */,
+				2905AE13271DC08800D67EFD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2905AE1F271DC09000D67EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2905AE28271DC09000D67EFD /* RSSWorkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2905AE2A271DC09000D67EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2905AE33271DC09000D67EFD /* RSSWorkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2905AE25271DC09000D67EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2905AE0C271DC08800D67EFD /* RSSWork */;
+			targetProxy = 2905AE24271DC09000D67EFD /* PBXContainerItemProxy */;
+		};
+		2905AE30271DC09000D67EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2905AE0C271DC08800D67EFD /* RSSWork */;
+			targetProxy = 2905AE2F271DC09000D67EFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2905AE16271DC08800D67EFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2905AE17271DC08800D67EFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2905AE1B271DC09000D67EFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2905AE1C271DC09000D67EFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2905AE35271DC09000D67EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2905AE36271DC09000D67EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2905AE38271DC09000D67EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C27F015A046204DE0D6EE3A4 /* Pods-RSSWork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RSSWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weihao.chen.RSSWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2905AE39271DC09000D67EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28AEE6044F2B924234757072 /* Pods-RSSWork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RSSWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weihao.chen.RSSWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2905AE3B271DC09000D67EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RSSWorkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weihao.chen.RSSWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSWork.app/RSSWork";
+			};
+			name = Debug;
+		};
+		2905AE3C271DC09000D67EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RSSWorkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weihao.chen.RSSWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSWork.app/RSSWork";
+			};
+			name = Release;
+		};
+		2905AE3E271DC09000D67EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RSSWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weihao.chen.RSSWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RSSWork;
+			};
+			name = Debug;
+		};
+		2905AE3F271DC09000D67EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RSSWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weihao.chen.RSSWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RSSWork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2905AE08271DC08800D67EFD /* Build configuration list for PBXProject "RSSWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2905AE35271DC09000D67EFD /* Debug */,
+				2905AE36271DC09000D67EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2905AE37271DC09000D67EFD /* Build configuration list for PBXNativeTarget "RSSWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2905AE38271DC09000D67EFD /* Debug */,
+				2905AE39271DC09000D67EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2905AE3A271DC09000D67EFD /* Build configuration list for PBXNativeTarget "RSSWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2905AE3B271DC09000D67EFD /* Debug */,
+				2905AE3C271DC09000D67EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2905AE3D271DC09000D67EFD /* Build configuration list for PBXNativeTarget "RSSWorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2905AE3E271DC09000D67EFD /* Debug */,
+				2905AE3F271DC09000D67EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2905AE05271DC08800D67EFD /* Project object */;
+}
