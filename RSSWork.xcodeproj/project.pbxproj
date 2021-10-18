@@ -15,6 +15,8 @@
 		2905AE1D271DC09000D67EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2905AE1B271DC09000D67EFD /* LaunchScreen.storyboard */; };
 		2905AE28271DC09000D67EFD /* RSSWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE27271DC09000D67EFD /* RSSWorkTests.swift */; };
 		2905AE33271DC09000D67EFD /* RSSWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE32271DC09000D67EFD /* RSSWorkUITests.swift */; };
+		2905AE50271DC65400D67EFD /* CRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE4F271DC65400D67EFD /* CRHomeViewController.swift */; };
+		2905AE59271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE58271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift */; };
 		92C6AA16D728DF5CC0446E97 /* libPods-RSSWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F683C679B1019C6AA358078 /* libPods-RSSWork.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		2905AE2E271DC09000D67EFD /* RSSWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2905AE32271DC09000D67EFD /* RSSWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSWorkUITests.swift; sourceTree = "<group>"; };
 		2905AE34271DC09000D67EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2905AE4F271DC65400D67EFD /* CRHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHomeViewController.swift; sourceTree = "<group>"; };
+		2905AE58271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHomeListCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F683C679B1019C6AA358078 /* libPods-RSSWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSSWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27F015A046204DE0D6EE3A4 /* Pods-RSSWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSWork.debug.xcconfig"; path = "Target Support Files/Pods-RSSWork/Pods-RSSWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +110,7 @@
 		2905AE0F271DC08800D67EFD /* RSSWork */ = {
 			isa = PBXGroup;
 			children = (
+				2905AE4B271DC5D300D67EFD /* Home */,
 				2905AE10271DC08800D67EFD /* AppDelegate.swift */,
 				2905AE12271DC08800D67EFD /* SceneDelegate.swift */,
 				2905AE14271DC08800D67EFD /* ViewController.swift */,
@@ -135,13 +140,45 @@
 			path = RSSWorkUITests;
 			sourceTree = "<group>";
 		};
+		2905AE4B271DC5D300D67EFD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2905AE4C271DC5D300D67EFD /* Models */,
+				2905AE4D271DC5D300D67EFD /* Controllers */,
+				2905AE4E271DC5D300D67EFD /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2905AE4C271DC5D300D67EFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2905AE4D271DC5D300D67EFD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2905AE4F271DC65400D67EFD /* CRHomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2905AE4E271DC5D300D67EFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2905AE58271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5D74E76867D85D18702BD3F9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C27F015A046204DE0D6EE3A4 /* Pods-RSSWork.debug.xcconfig */,
 				28AEE6044F2B924234757072 /* Pods-RSSWork.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,8 +346,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2905AE59271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift in Sources */,
 				2905AE15271DC08800D67EFD /* ViewController.swift in Sources */,
 				2905AE11271DC08800D67EFD /* AppDelegate.swift in Sources */,
+				2905AE50271DC65400D67EFD /* CRHomeViewController.swift in Sources */,
 				2905AE13271DC08800D67EFD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
