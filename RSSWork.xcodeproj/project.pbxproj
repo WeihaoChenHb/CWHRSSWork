@@ -17,6 +17,7 @@
 		2905AE33271DC09000D67EFD /* RSSWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE32271DC09000D67EFD /* RSSWorkUITests.swift */; };
 		2905AE50271DC65400D67EFD /* CRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE4F271DC65400D67EFD /* CRHomeViewController.swift */; };
 		2905AE59271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE58271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift */; };
+		2905AECA271F0F0700D67EFD /* DefaultRssList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2905AEC9271F0F0700D67EFD /* DefaultRssList.plist */; };
 		92C6AA16D728DF5CC0446E97 /* libPods-RSSWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F683C679B1019C6AA358078 /* libPods-RSSWork.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		2905AE34271DC09000D67EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2905AE4F271DC65400D67EFD /* CRHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHomeViewController.swift; sourceTree = "<group>"; };
 		2905AE58271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHomeListCollectionViewCell.swift; sourceTree = "<group>"; };
+		2905AEC9271F0F0700D67EFD /* DefaultRssList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DefaultRssList.plist; sourceTree = "<group>"; };
 		3F683C679B1019C6AA358078 /* libPods-RSSWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSSWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27F015A046204DE0D6EE3A4 /* Pods-RSSWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSWork.debug.xcconfig"; path = "Target Support Files/Pods-RSSWork/Pods-RSSWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				2905AE0F271DC08800D67EFD /* RSSWork */,
+				2905AEC8271F0EA700D67EFD /* Source File */,
 				2905AE26271DC09000D67EFD /* RSSWorkTests */,
 				2905AE31271DC09000D67EFD /* RSSWorkUITests */,
 				2905AE0E271DC08800D67EFD /* Products */,
@@ -110,6 +113,7 @@
 		2905AE0F271DC08800D67EFD /* RSSWork */ = {
 			isa = PBXGroup;
 			children = (
+				2905AEBF271F0C8F00D67EFD /* Vendors */,
 				2905AE4B271DC5D300D67EFD /* Home */,
 				2905AE10271DC08800D67EFD /* AppDelegate.swift */,
 				2905AE12271DC08800D67EFD /* SceneDelegate.swift */,
@@ -171,6 +175,29 @@
 				2905AE58271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2905AEBF271F0C8F00D67EFD /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				2905AEC3271F0CA300D67EFD /* Net */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		2905AEC3271F0CA300D67EFD /* Net */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		2905AEC8271F0EA700D67EFD /* Source File */ = {
+			isa = PBXGroup;
+			children = (
+				2905AEC9271F0F0700D67EFD /* DefaultRssList.plist */,
+			);
+			path = "Source File";
 			sourceTree = "<group>";
 		};
 		5D74E76867D85D18702BD3F9 /* Pods */ = {
@@ -297,6 +324,7 @@
 				2905AE1D271DC09000D67EFD /* LaunchScreen.storyboard in Resources */,
 				2905AE1A271DC09000D67EFD /* Assets.xcassets in Resources */,
 				2905AE18271DC08800D67EFD /* Main.storyboard in Resources */,
+				2905AECA271F0F0700D67EFD /* DefaultRssList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
