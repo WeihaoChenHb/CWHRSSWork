@@ -18,6 +18,7 @@
 		2905AE50271DC65400D67EFD /* CRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE4F271DC65400D67EFD /* CRHomeViewController.swift */; };
 		2905AE59271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE58271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift */; };
 		2905AECA271F0F0700D67EFD /* DefaultRssList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2905AEC9271F0F0700D67EFD /* DefaultRssList.plist */; };
+		2905AED0271F1E2300D67EFD /* CRFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AECF271F1E2300D67EFD /* CRFeedStore.swift */; };
 		92C6AA16D728DF5CC0446E97 /* libPods-RSSWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F683C679B1019C6AA358078 /* libPods-RSSWork.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		2905AE4F271DC65400D67EFD /* CRHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHomeViewController.swift; sourceTree = "<group>"; };
 		2905AE58271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHomeListCollectionViewCell.swift; sourceTree = "<group>"; };
 		2905AEC9271F0F0700D67EFD /* DefaultRssList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DefaultRssList.plist; sourceTree = "<group>"; };
+		2905AECF271F1E2300D67EFD /* CRFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRFeedStore.swift; sourceTree = "<group>"; };
 		3F683C679B1019C6AA358078 /* libPods-RSSWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSSWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27F015A046204DE0D6EE3A4 /* Pods-RSSWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSWork.debug.xcconfig"; path = "Target Support Files/Pods-RSSWork/Pods-RSSWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +182,7 @@
 		2905AEBF271F0C8F00D67EFD /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				2905AECE271F1E1000D67EFD /* Store */,
 				2905AEC3271F0CA300D67EFD /* Net */,
 			);
 			path = Vendors;
@@ -198,6 +201,14 @@
 				2905AEC9271F0F0700D67EFD /* DefaultRssList.plist */,
 			);
 			path = "Source File";
+			sourceTree = "<group>";
+		};
+		2905AECE271F1E1000D67EFD /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2905AECF271F1E2300D67EFD /* CRFeedStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		5D74E76867D85D18702BD3F9 /* Pods */ = {
@@ -374,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2905AED0271F1E2300D67EFD /* CRFeedStore.swift in Sources */,
 				2905AE59271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift in Sources */,
 				2905AE15271DC08800D67EFD /* ViewController.swift in Sources */,
 				2905AE11271DC08800D67EFD /* AppDelegate.swift in Sources */,
