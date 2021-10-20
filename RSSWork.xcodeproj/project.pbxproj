@@ -19,6 +19,8 @@
 		2905AE59271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AE58271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift */; };
 		2905AECA271F0F0700D67EFD /* DefaultRssList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2905AEC9271F0F0700D67EFD /* DefaultRssList.plist */; };
 		2905AED0271F1E2300D67EFD /* CRFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AECF271F1E2300D67EFD /* CRFeedStore.swift */; };
+		2905AED82720423300D67EFD /* CRFeedStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AED72720423300D67EFD /* CRFeedStoreModel.swift */; };
+		2905AEE127205B7E00D67EFD /* UIConstantsDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905AEE027205B7E00D67EFD /* UIConstantsDefine.swift */; };
 		92C6AA16D728DF5CC0446E97 /* libPods-RSSWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F683C679B1019C6AA358078 /* libPods-RSSWork.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		2905AE58271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHomeListCollectionViewCell.swift; sourceTree = "<group>"; };
 		2905AEC9271F0F0700D67EFD /* DefaultRssList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DefaultRssList.plist; sourceTree = "<group>"; };
 		2905AECF271F1E2300D67EFD /* CRFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRFeedStore.swift; sourceTree = "<group>"; };
+		2905AED72720423300D67EFD /* CRFeedStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRFeedStoreModel.swift; sourceTree = "<group>"; };
+		2905AEE027205B7E00D67EFD /* UIConstantsDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstantsDefine.swift; sourceTree = "<group>"; };
 		3F683C679B1019C6AA358078 /* libPods-RSSWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSSWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27F015A046204DE0D6EE3A4 /* Pods-RSSWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSWork.debug.xcconfig"; path = "Target Support Files/Pods-RSSWork/Pods-RSSWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				2905AE0F271DC08800D67EFD /* RSSWork */,
-				2905AEC8271F0EA700D67EFD /* Source File */,
 				2905AE26271DC09000D67EFD /* RSSWorkTests */,
 				2905AE31271DC09000D67EFD /* RSSWorkUITests */,
 				2905AE0E271DC08800D67EFD /* Products */,
@@ -124,6 +127,7 @@
 				2905AE19271DC09000D67EFD /* Assets.xcassets */,
 				2905AE1B271DC09000D67EFD /* LaunchScreen.storyboard */,
 				2905AE1E271DC09000D67EFD /* Info.plist */,
+				2905AEC8271F0EA700D67EFD /* Source File */,
 			);
 			path = RSSWork;
 			sourceTree = "<group>";
@@ -159,6 +163,7 @@
 		2905AE4C271DC5D300D67EFD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2905AED72720423300D67EFD /* CRFeedStoreModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 		2905AEBF271F0C8F00D67EFD /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				2905AEDF27205B7900D67EFD /* Constants */,
 				2905AECE271F1E1000D67EFD /* Store */,
 				2905AEC3271F0CA300D67EFD /* Net */,
 			);
@@ -209,6 +215,14 @@
 				2905AECF271F1E2300D67EFD /* CRFeedStore.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		2905AEDF27205B7900D67EFD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2905AEE027205B7E00D67EFD /* UIConstantsDefine.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		5D74E76867D85D18702BD3F9 /* Pods */ = {
@@ -385,8 +399,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2905AEE127205B7E00D67EFD /* UIConstantsDefine.swift in Sources */,
 				2905AED0271F1E2300D67EFD /* CRFeedStore.swift in Sources */,
 				2905AE59271DC99E00D67EFD /* CRHomeListCollectionViewCell.swift in Sources */,
+				2905AED82720423300D67EFD /* CRFeedStoreModel.swift in Sources */,
 				2905AE15271DC08800D67EFD /* ViewController.swift in Sources */,
 				2905AE11271DC08800D67EFD /* AppDelegate.swift in Sources */,
 				2905AE50271DC65400D67EFD /* CRHomeViewController.swift in Sources */,

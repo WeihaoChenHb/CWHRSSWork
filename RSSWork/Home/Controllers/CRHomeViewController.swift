@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SnapKit
 
-class CRHomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CRHomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
     
@@ -18,10 +19,14 @@ class CRHomeViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.dataSource = defaultFeeds()
+        
+        setupUI()
     }
     
     private func setupUI() {
-        
+        setupContainerView()
     }
     
     private func setupContainerView() {
@@ -32,8 +37,13 @@ class CRHomeViewController: UIViewController, UICollectionViewDelegate, UICollec
         containerListView.dataSource = self
         containerListView.showsVerticalScrollIndicator = false
         containerListView.showsHorizontalScrollIndicator = false
+        containerListView.backgroundColor = .white
         containerListView.register(CRHomeListCollectionViewCell.self, forCellWithReuseIdentifier: cellRegiestId)
         self.view.addSubview(containerListView)
+        
+        containerListView.snp.makeConstraints { (make) in
+            make.edges.equalTo(view)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -41,9 +51,18 @@ class CRHomeViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellRegiestId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellRegiestId, for: indexPath) as! CRHomeListCollectionViewCell
+        
+        let storeModel = self.dataSource[indexPath.row]
+        
+        cell.fillData(withStoreModel: storeModel as! CRFeedStoreModel)
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: kScreenWidth, height: w_ratio(100));
+    }
+    
     
 }
