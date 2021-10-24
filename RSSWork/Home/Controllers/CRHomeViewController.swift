@@ -14,7 +14,7 @@ class CRHomeViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     var containerListView : UICollectionView!,
         layout : UICollectionViewFlowLayout!,
-        dataSource : Array<Any>!
+        dataSource : Array<CRFeedStoreModel>!
     let cellRegiestId = "CRHomeListCollectionViewCell"
     
     override func viewDidLoad() {
@@ -55,13 +55,20 @@ class CRHomeViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         let storeModel = self.dataSource[indexPath.row]
         
-        cell.fillData(withStoreModel: storeModel as! CRFeedStoreModel)
+        cell.fillData(withStoreModel: storeModel)
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: kScreenWidth, height: w_ratio(100));
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storeModel = self.dataSource[indexPath.row]
+        requestRSSList(rssUrl: storeModel.xmlLink) { (data) in
+            
+        }
     }
     
     

@@ -29,6 +29,9 @@ let kIPhone12_Pro_MAX_Height    = 926.0
 let kNormalWidthRatio           = kScreenWidth / kIPhone6_Width
 let kNormalHeightRatio          = kScreenHeight / kIPhone6_Height
 
+
+let logoPlaceHoldImageName      = ""
+
 func w_ratio(_ width : Double) -> Double {
     return width * kNormalWidthRatio
 }

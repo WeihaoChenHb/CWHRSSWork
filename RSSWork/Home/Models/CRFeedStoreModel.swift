@@ -8,9 +8,10 @@
 import Foundation
 
 class CRFeedStoreModel {
-    var title : String!,
-        desc : String!,
+    var title   : String!,
+        desc    : String!,
         iconUrl : String!,
         xmlLink : String!,
-        webLink : String!
+        webLink : String!,
+        items   : [CRFeedStoreItemModel]!
 }

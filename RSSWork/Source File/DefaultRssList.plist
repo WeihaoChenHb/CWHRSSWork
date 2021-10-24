@@ -124,6 +124,18 @@
 			<key>webLink</key>
 			<string>http://news.cctv.com/world</string>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>V2EX</string>
+			<key>desc</key>
+			<string></string>
+			<key>iconUrl</key>
+			<string></string>
+			<key>xmlLink</key>
+			<string>http://www.v2ex.com/index.xml</string>
+			<key>webLink</key>
+			<string></string>
+		</dict>
 	</array>
 </dict>
 </plist>
