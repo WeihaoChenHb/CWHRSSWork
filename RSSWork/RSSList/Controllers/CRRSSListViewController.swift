@@ -53,4 +53,13 @@ class CRRSSListViewController: UIViewController,UICollectionViewDelegate,UIColle
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let cellModel : CRRSSListCollectionViewCellModel = dataSource[indexPath.row] as! CRRSSListCollectionViewCellModel
+        
+        
+        
+        return CGSize(width: kScreenWidth, height: w_ratio(100));
+    }
+    
 }

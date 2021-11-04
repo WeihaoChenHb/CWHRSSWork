@@ -34,6 +34,7 @@ class CRRSSListCollectionViewCell: UICollectionViewCell {
     // MARK: Setup UI
     private func setupUI() {
         titleLabel = UILabel()
+        titleLabel.font = UIFont.systemFont(ofSize: CGFloat(w_ratio(15)))
         contentView.addSubview(titleLabel)
         
         descLabel = UILabel()
@@ -63,13 +64,13 @@ class CRRSSListCollectionViewCell: UICollectionViewCell {
         
         descLabel.snp.makeConstraints { (make) in
             make.left.right.equalTo((titleLabel))
-            make.top.equalTo(titleLabel.snp.bottom).offset(10)
+            make.top.equalTo(titleLabel.snp.bottom).offset(5)
             make.height.equalTo(w_ratio(10))
         }
         
         logoImageView.snp.makeConstraints { (make) in
             make.left.equalTo(titleLabel)
-            make.top.equalTo(descLabel.snp.bottom).offset(w_ratio(10))
+            make.top.equalTo(descLabel.snp.bottom).offset(w_ratio(5))
             make.size.equalTo(CGSize(width: w_ratio(10), height: w_ratio(10)))
         }
         

@@ -9,13 +9,14 @@ import Foundation
 import Alamofire
 import SWXMLHash
 
-func requestRSSList(rssUrl url: String ,_ responseClouse : @escaping (Data) -> Void) {
+func requestRSSList(rssUrl url: String ,_ responseClouse : @escaping (CRFeedStoreModel?) -> Void) {
     Alamofire.AF.request(url)
         .responseData { response in
             switch response.result {
             case .success(_):
-                responseClouse(response.data ?? Data())
-                analysisXML(xmlData: response.data ?? Data())
+                let storeModel = analysisXML(xmlData: response.data)
+                responseClouse(storeModel)
+              
             case .failure(_):
                 print(response.error)
             }
@@ -23,10 +24,15 @@ func requestRSSList(rssUrl url: String ,_ responseClouse : @escaping (Data) -> V
 }
 
 
-func analysisXML(xmlData data : Data) -> Array<Any> {
-    let xml = XMLHash.parse(data)
+func analysisXML(xmlData data : Data?) -> CRFeedStoreModel? {
+    if data == nil {
+        return nil
+    }
+    let xml = XMLHash.parse(data!)
     
     let feedModel = CRFeedStoreModel()
+    
+    var itemArray = [CRFeedStoreItemModel]()
     
     for element in xml.children {
         let channel = element["channel"]
@@ -78,6 +84,7 @@ func analysisXML(xmlData data : Data) -> Array<Any> {
                             itemModel.description = elementItem.text
                         }
                     }
+                    itemArray.append(itemModel)
                 }
                 
             }
@@ -111,12 +118,34 @@ func analysisXML(xmlData data : Data) -> Array<Any> {
                     continue
                 }
                 if entryElemnt.name == "link" {
-                    
+                    itemModel.link = entryElemnt.text
+                }
+                if entryElemnt.name == "title" {
+                    itemModel.title = entryElemnt.text
+                }
+                if entryElemnt.name == "author" {
+                    for authorChild in entryChild.children {
+                        guard let authorElement = authorChild.element else {
+                            continue
+                        }
+                        if authorElement.name == "name" {
+                            itemModel.author = authorElement.text
+                        }
+                    }
+                }
+                if entryElemnt.name == "updated" {
+                    itemModel.pubDate = entryElemnt.text
+                }
+                if entryElemnt.name == "content" {
+                    itemModel.description = entryElemnt.text
                 }
             }
+            itemArray.append(itemModel)
         }
         
     }
     
-    return [1]
+    feedModel.items = itemArray
+    
+    return feedModel
 }

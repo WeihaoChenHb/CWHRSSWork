@@ -67,7 +67,7 @@ class CRHomeViewController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storeModel = self.dataSource[indexPath.row]
         requestRSSList(rssUrl: storeModel.xmlLink) { (data) in
-            
+            print(data)
         }
     }
     
